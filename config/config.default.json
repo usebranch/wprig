@@ -29,7 +29,7 @@
     "debug": {
       "styles": false,
       "scripts": false,
-      "phpcs": true
+      "phpcs": false
     }
   },
   "export": {
