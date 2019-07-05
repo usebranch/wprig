@@ -1,1 +1,8 @@
-{}
+{
+    "theme": {
+        "slug": "branch-theme",
+        "name": "Branch Theme",
+        "author": "Peter Suhm",
+        "PHPNamespace": "Branch"
+    }
+}

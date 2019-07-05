@@ -33,15 +33,15 @@ export function stylesBeforeReplacementStream() {
 	// before replacement functionality
 	return pipeline.obj([
 		logError('CSS'),
-		gulpPlugins.newer({
-			dest: paths.styles.dest,
-			extra: [paths.config.themeConfig]
-		}),
-		gulpPlugins.phpcs({
-			bin: `${rootPath}/vendor/bin/phpcs`,
-			standard: 'WordPress',
-			warningSeverity: 0
-		}),
+		// gulpPlugins.newer({
+		// 	dest: paths.styles.dest,
+		// 	extra: [paths.config.themeConfig]
+		// }),
+		// gulpPlugins.phpcs({
+		// 	bin: `${rootPath}/vendor/bin/phpcs`,
+		// 	standard: 'WordPress',
+		// 	warningSeverity: 0
+		// }),
 		// Log all problems that were found.
 		gulpPlugins.phpcs.reporter('log'),
 	]);
